@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*---RESET---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*!---HEADER---*/
+header{
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+header h1{
+    font-family:"Baskervville SC", serif;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    margin: 0px 0px 0px 25px;
+
+}
+
+header nav ul{
+    margin:25px;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a{
+    color: rgb(255, 255, 255);
+}
+/*!----MAIN----*/
+
+main{
+    background-color: black;
+}
+
+.hero{
+    height: 500px;
+}
+
+.hero div{
+    height: 100%;
+}
+
+
+.hero ul li{
+    color: white;
+    margin: 70px;
+    font-size: 18px;
+    font-family: "Baskervville SC", serif ;
+    display: inline-block;
+}
+
+.productos h2{
+    height: 45px;
+    color: black;
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 10px;
+}
+
+.productos .productos-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos .productos-tarjetas div{
+    width: 300px;
+    height: 420px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos div img{
+    width: 100%;
+    height: 350px;
+
+}
+.productos div h3{
+    margin: 5px;
+    color: white;
+    font-family:"Rajdhani", sans-serif;
+    font-weight: 300;
+
+}
+.productos div a{
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    font-family:"Baskervville SC", serif;
+    font-weight: 100;
+}
+
+.suscribete h3 p{
+    color: white;
+    background-color: white;
+}
+
+.suscribete img{
+    height: 250px; 
+}
+
+
+/*!----FOOTER----*/
+footer{
+    background-color: rgb(238, 234, 234);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+footer h3{
+        font-family: "Baskervville SC", serif ;
+        font-size: 30px;
+}
+
+footer div a img{
+    width: 50px;
+    height: 45px;
+    margin: 0px 0px 15px 15px;
+}
+
+
+/*!----BEM----*/
+header nav ul a:hover{
+    color:black
+    
+}
+
+.boton:hover{
+    color: black;
+    background-color: white;
+}
+
+.collapsenavbar-collapse :hover{
+    color: black;
+}
