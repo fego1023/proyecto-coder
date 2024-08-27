@@ -57,20 +57,23 @@ main{
 }
 
 .hero{
-    height: 500px;
+    height: 450px;
 }
 
-.hero div{
-    height: 100%;
+.hero div .carousel-inner img{
+    height: 450px;
+    width: 100%;
 }
-
 
 .hero ul li{
     color: white;
     margin: 70px;
     font-size: 18px;
     font-family: "Baskervville SC", serif ;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .productos h2{
@@ -122,16 +125,20 @@ main{
     font-weight: 100;
 }
 
+.suscribete{
+    display: flex;
+    justify-content: space-around;
+}
+
 .suscribete h3 p{
     color: white;
-    background-color: white;
+
 }
 
-.suscribete img{
-    height: 250px; 
+section img{
+    height: 100px;
+    width: 100px;
 }
-
-
 /*!----FOOTER----*/
 footer{
     background-color: rgb(238, 234, 234);  
