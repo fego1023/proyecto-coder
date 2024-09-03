@@ -3,3 +3,38 @@
 @import "./componentes/header";
 @import "./componentes/main";
 @import "./base/mq"
+
+header {
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 20px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    
+    h1{
+    font-family: "Baskervville SC", serif;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    margin: 0px 0px 0px 25px;
+    }
+    nav{
+        ul{
+            margin: 25px;
+            display: flex;
+            li{
+                margin: 10px;
+                    a{
+                        color: rgb(255, 255, 255);
+                        &:hover{
+                            color: black
+                        }
+                    }
+                }
+            } 
+        }
+    }
