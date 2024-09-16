@@ -5,7 +5,7 @@
 @use "./componentes/footer";
 @use "./base/mq"
 
-header{
+header {
     background-color: rgba(0, 0, 0, 0.32); 
     height: 20px;
     width: 100%;
@@ -15,12 +15,14 @@ header{
     align-items: center;
     position: fixed;
     z-index: 99;
-    h1{
-    font-family: "Baskervville SC", serif;
-    font-size: 40px;
-    padding: 10px;
-    color: white;
-    margin: 0px 0px 0px 25px;
+    .barranav-conteiner{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 30px;
+            height: 30px;
+            padding: 15px;
+        }
     }
     nav{
         ul{
@@ -34,10 +36,10 @@ header{
                             color: black;
                         }
                     }
+                }
             }
         } 
     }
-}
 
 main {
     .hero{

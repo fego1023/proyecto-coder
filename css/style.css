@@ -30,13 +30,15 @@ header {
     z-index: 99;
 }
 
-header h1 {
-    font-family: "Baskervville SC", serif;
-    font-size: 40px;
-    padding: 10px;
-    color: white;
-    margin: 0px 0px 0px 25px;
 
+header  img{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+.barranav-coneiner{
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul {
@@ -69,8 +71,10 @@ main {
 
 .hero div .carousel-inner img {
     height: 550px;
-    width: 100%;
+    max-width: 100%;
+    display: block;
 }
+
 
 .productos h2 {
     height: 50px;
@@ -179,4 +183,108 @@ footer div a img {
 
 .collapsenavbar-collapse :hover {
     color: black;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    header {
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        z-index: 1000; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .barranav-conteiner img {
+        width: 80px; 
+        height: auto;
+    }
+
+    nav {
+        width: 100%; 
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: black; 
+    }
+
+}
+
+
+/* Estilos para medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    .barranav-conteiner img {
+        width: 80px;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .productos-tarjetas {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .productos-tarjetas div {
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1025px) {
+    .barranav-conteiner img {
+        width: 100px;
+        height: auto;
+    }
+
+    .productos-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem;
+    }
 }

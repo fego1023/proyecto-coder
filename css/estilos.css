@@ -15,12 +15,13 @@ header {
   align-items: center;
   position: fixed;
   z-index: 99;
-  h1 {
-    font-family: "Baskervville SC", serif;
-    font-size: 40px;
-    padding: 10px;
-    color: white;
-    margin: 0px 0px 0px 25px; }
+  .barranav-conteiner {
+    display: flex;
+    flex-direction: column; }
+    .barranav-conteiner img {
+      width: 30px;
+      height: 30px;
+      padding: 15px; }
   nav ul {
     margin: 25px;
     display: flex; }
